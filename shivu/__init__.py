@@ -2,8 +2,9 @@ import logging
 import os
 import pytz  
 from pyrogram import Client
-from telegram.ext import Application
+from telegram.ext import ApplicationBuilder
 from motor.motor_asyncio import AsyncIOMotorClient
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
@@ -18,6 +19,7 @@ LOGGER = logging.getLogger(__name__)
 
 from shivu.config import Development as Config
 
+# --- AAPKI PURANI VARIABLES (SAME TO SAME) ---
 api_id = Config.api_id
 api_hash = Config.api_hash
 TOKEN = Config.TOKEN
@@ -45,11 +47,12 @@ Hokage= Config.Hokage
 Akatsuki = Config.Akatsuki
 Princess = Config.Princess
 
-# Timezone error fix karne ke liye ye zaroori hai
-application = Application.builder().token(TOKEN).build()
-# Agar fir bhi error aaye, toh is line ko replace kar dena:
-# application = Application.builder().token(TOKEN).proxy_url('http://localhost:8080').build() 
+# --- NEW FIX CODE (TIMEZONE ERROR KILLER) ---
+# Forced UTC timezone taaki Hugging Face crash na ho
+scheduler = AsyncIOScheduler(timezone=pytz.utc)
+application = ApplicationBuilder().token(TOKEN).build()
 
+# --- AAPKI PURANI COLLECTIONS (SAME TO SAME) ---
 shivuu = Client("Shivu", api_id, api_hash, bot_token=TOKEN)
 lol = AsyncIOMotorClient(mongo_url)
 db = lol['Character_catcher']
