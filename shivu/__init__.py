@@ -1,5 +1,6 @@
 import logging
 import os
+import pytz  
 from pyrogram import Client
 from telegram.ext import Application
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -44,7 +45,11 @@ Hokage= Config.Hokage
 Akatsuki = Config.Akatsuki
 Princess = Config.Princess
 
+# Timezone error fix karne ke liye ye zaroori hai
 application = Application.builder().token(TOKEN).build()
+# Agar fir bhi error aaye, toh is line ko replace kar dena:
+# application = Application.builder().token(TOKEN).proxy_url('http://localhost:8080').build() 
+
 shivuu = Client("Shivu", api_id, api_hash, bot_token=TOKEN)
 lol = AsyncIOMotorClient(mongo_url)
 db = lol['Character_catcher']
