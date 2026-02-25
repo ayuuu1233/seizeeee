@@ -1,3 +1,12 @@
+---
+title: Kawaii Bot
+emoji: ⚡
+colorFrom: blue
+colorTo: pink
+sdk: docker
+pinned: false
+---
+
 # 🎴 WAIFU & HUSBANDO CATCHER 🎴  
 _A Unique & Advanced Character Collector Bot for Telegram_  
 
