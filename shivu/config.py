@@ -1,14 +1,18 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class Development:
     # Define all the required configurations here
-    api_id = 21621475
-    api_hash = "50c4947b6fe96901599c8b18b09f3e13"
-    TOKEN = "7907123670:AAHe0dB475AoK2PEjmyev7gfX-BVdW101o8"  # Replace with your actual bot token
+    api_id = int(os.getenv("api_id"))
+    api_hash = os.getenv("api_hash")
+    TOKEN = os.getenv("TOKEN")  # Replace with your actual bot token
     GROUP_ID = -1001945969614
     CHARA_CHANNEL_ID = -1002049694247
-    mongo_url = "mongodb+srv://Ayuu_boy1:kawaiibot123@cluster0.znl7gjh.mongodb.net/?appName=Cluster0"  # Replace with your actual MongoDB URL
+    mongo_url = os.getenv("mongo_url") # Replace with your actual MongoDB URL
     PHOTO_URL = [
         "https://telegra.ph/file/c74151f4c2b56a107a24b.jpg",
         "https://telegra.ph/file/6a81a91aa4a660a73194b.jpg"
@@ -16,7 +20,7 @@ class Development:
     SUPPORT_CHAT = "upper_moon_chat"
     UPDATE_CHAT = "Seizer_update"
     BOT_USERNAME = "@Zenuuui_mucis_bot"
-    OWNER_ID = "5158013355"
+    OWNER_ID = os.getenv("OWNER_ID")
     sudo_users = [
         "6835013483", "7004889403", "1135445089", "5158013355", "5630057244", 
         "1374057577", "6305653111", "5421067814", "7497950160", "7334126640", 
