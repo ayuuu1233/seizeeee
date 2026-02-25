@@ -490,32 +490,32 @@ application.add_handler(CommandHandler('set_off', set_off, block=False))
 # --- BOT START ---
 
 async def start_bot():
-    
+    # 1. Pyrogram start 
     await shivuu.start()
-    LOGGER.info("Pyrogram Client Started")
-    
-    
+    LOGGER.info("Pyrogram Client Started!")
+
+    # 2. Saare Handlers register karo (Jo tune pehle likhe the)
     application.add_handler(CommandHandler(["seize"], guess, block=False))
     application.add_handler(MessageHandler(filters.ALL, message_counter, block=False))
     application.add_handler(CommandHandler('set_on', set_on, block=False))
     application.add_handler(CommandHandler('set_off', set_off, block=False))
-    
-    
+
+    # 3. Telegram-Bot Application start 
     async with application:
         await application.initialize()
         await application.start()
+        # polling start 
         await application.updater.start_polling(drop_pending_updates=True)
-        LOGGER.info("Telegram PTB Started")
+        LOGGER.info("Bot is now Online on Telegram!")
         
+        # Ye line bot ko band hone se rokegi
         await asyncio.Event().wait()
 
 if __name__ == "__main__":
     try:
-        
-        asyncio.run(start_bot())
+        # Loop ko manage karne ka sahi tarika
+        asyncio.get_event_loop().run_until_complete(start_bot())
     except (KeyboardInterrupt, SystemExit):
-        pass
-    except RuntimeError:
-        
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(start_bot())
+        LOGGER.info("Bot Stopped!")
+    except Exception as e:
+        LOGGER.error(f"Error: {e}")
