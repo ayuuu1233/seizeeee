@@ -6,7 +6,7 @@ class Development:
     api_id = 21621475
     api_hash = "50c4947b6fe96901599c8b18b09f3e13"
     TOKEN = "7907123670:AAHe0dB475AoK2PEjmyev7gfX-BVdW101o8"  # Replace with your actual bot token
-    GROUP_ID = -1002466950912
+    GROUP_ID = -1001945969614
     CHARA_CHANNEL_ID = -1002049694247
     mongo_url = "mongodb+srv://Ayuu_boy1:kawaiibot123@cluster0.znl7gjh.mongodb.net/?appName=Cluster0"  # Replace with your actual MongoDB URL
     PHOTO_URL = [
