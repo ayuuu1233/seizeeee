@@ -432,8 +432,8 @@ async def guess(update: Update, context: CallbackContext) -> None:
 # rarity_map = {1: "Common", 2: "Rare", ...}
 # rarity_active = {"Common": False, "Rare": True, ...}
 
-AUTHORIZED_USER_ID = 6402009857
-AUTHORIZED_USER_NAME = "my Sensei @The_clan_killer_12"
+AUTHORIZED_USER_ID = 5158013355
+AUTHORIZED_USER_NAME = "my Sensei @Ayushboy1"
 
 # Command to turn a rarity on
 async def set_on(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -487,14 +487,35 @@ async def set_off(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 application.add_handler(CommandHandler('set_on', set_on, block=False))
 application.add_handler(CommandHandler('set_off', set_off, block=False))
 
-def main() -> None:
-    """Run bot."""
+# --- BOT START ---
+
+async def start_bot():
+    
+    await shivuu.start()
+    LOGGER.info("Pyrogram Client Started")
+    
     
     application.add_handler(CommandHandler(["seize"], guess, block=False))
     application.add_handler(MessageHandler(filters.ALL, message_counter, block=False))
-    application.run_polling(drop_pending_updates=True)
+    application.add_handler(CommandHandler('set_on', set_on, block=False))
+    application.add_handler(CommandHandler('set_off', set_off, block=False))
+    
+    
+    async with application:
+        await application.initialize()
+        await application.start()
+        await application.updater.start_polling(drop_pending_updates=True)
+        LOGGER.info("Telegram PTB Started")
+        
+        await asyncio.Event().wait()
 
 if __name__ == "__main__":
-    shivuu.start()
-    LOGGER.info("Bot started")
-    main()
+    try:
+        
+        asyncio.run(start_bot())
+    except (KeyboardInterrupt, SystemExit):
+        pass
+    except RuntimeError:
+        
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(start_bot())
