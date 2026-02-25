@@ -3,20 +3,20 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 
 class Development:
     # Define all the required configurations here
-    api_id = 29098103
-    api_hash = "06baef4020832888ccf3ebf4e746d52b"
-    TOKEN = "7335799800:AAEqEIH_FqVnSJB8C6Czcx6btuchVFvMuVQ"  # Replace with your actual bot token
+    api_id = 21621475
+    api_hash = "50c4947b6fe96901599c8b18b09f3e13"
+    TOKEN = "7907123670:AAHe0dB475AoK2PEjmyev7gfX-BVdW101o8"  # Replace with your actual bot token
     GROUP_ID = -1002466950912
     CHARA_CHANNEL_ID = -1002049694247
-    mongo_url = "mongodb+srv://seizewaifubot:seizewaifubot@itachi.9qya0.mongodb.net/?retryWrites=true&w=majority&appName=itachi"  # Replace with your actual MongoDB URL
+    mongo_url = "mongodb+srv://Ayuu_boy1:kawaiibot123@cluster0.znl7gjh.mongodb.net/?appName=Cluster0"  # Replace with your actual MongoDB URL
     PHOTO_URL = [
         "https://telegra.ph/file/c74151f4c2b56a107a24b.jpg",
         "https://telegra.ph/file/6a81a91aa4a660a73194b.jpg"
     ]
-    SUPPORT_CHAT = "Dyna_community"
+    SUPPORT_CHAT = "upper_moon_chat"
     UPDATE_CHAT = "Seizer_update"
-    BOT_USERNAME = "Character_seize_bot"
-    OWNER_ID = "6835013483"
+    BOT_USERNAME = "@Zenuuui_mucis_bot"
+    OWNER_ID = "5158013355"
     sudo_users = [
         "6835013483", "7004889403", "1135445089", "5158013355", "5630057244", 
         "1374057577", "6305653111", "5421067814", "7497950160", "7334126640", 
@@ -30,7 +30,7 @@ class Development:
     GRADE3 = ["7334126640"]
     GRADE2 = ["6305653111", "5421067814"]
     GRADE1 = ["7004889403", "1374057577", "5158013355", "5630057244", "7334126640", "5421067814"]
-    SPECIALGRADE = ["6402009857", "1993290981", "6835013483"]
+    SPECIALGRADE = ["6402009857", "1993290981", "6835013483", "5158013355"]
     # Additional user roles
     Genin = []
     Chunin = []
