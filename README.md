@@ -1,9 +1,11 @@
+---
 title: Kawaii Bot
 emoji: ⚡
 colorFrom: blue
 colorTo: pink
 sdk: docker
 pinned: false
+---
 
 
 # 🎴 WAIFU & HUSBANDO CATCHER 🎴  
