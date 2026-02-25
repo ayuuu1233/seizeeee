@@ -1,4 +1,4 @@
-motor
+Motor
 pillow
 requests
 python-telegram-bot
@@ -6,6 +6,7 @@ pymongo
 pyrate-limiter==3.1.0
 apscheduler==3.6.3
 pytz
+tzlocal==2.1
 pyrogram
 tgcrypto 
 python-dotenv
