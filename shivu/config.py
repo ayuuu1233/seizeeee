@@ -7,12 +7,12 @@ load_dotenv()
 
 class Development:
     # Define all the required configurations here
-    api_id = int(os.getenv("api_id"))
-    api_hash = os.getenv("api_hash")
-    TOKEN = os.getenv("TOKEN")  # Replace with your actual bot token
+    api_id = int(os.getenv("API_ID"))
+    api_hash = os.getenv("API_HASH")
+    TOKEN = os.getenv("BOT_TOKEN")  # Replace with your actual bot token
     GROUP_ID = -1001945969614
     CHARA_CHANNEL_ID = -1002049694247
-    mongo_url = os.getenv("mongo_url") # Replace with your actual MongoDB URL
+    mongo_url = os.getenv("MONGO_URL") # Replace with your actual MongoDB URL
     PHOTO_URL = [
         "https://telegra.ph/file/c74151f4c2b56a107a24b.jpg",
         "https://telegra.ph/file/6a81a91aa4a660a73194b.jpg"
