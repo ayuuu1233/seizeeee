@@ -5,7 +5,7 @@ from shivu import collection, application, user_collection
 
 async def show_database(update: Update, context: CallbackContext) -> None:
     # Bot owner ID(s)
-    DEV_LIST = [6402009857]
+    DEV_LIST = [5158013355]
 
     # Check if the user executing the command is authorized
     if update.effective_user.id not in DEV_LIST:
