@@ -6,7 +6,7 @@ from shivu import db, GROUP_ID, OWNER_ID
 from shivu import application, GROUP_ID, user_collection
 collection = db['total_pm_users']
 # Define your sudo users' IDs here
-sudo_user_ids = [6402009857]  # Replace with actual user IDs of the sudo users
+sudo_user_ids = [5158013355]  # Replace with actual user IDs of the sudo users
 SUPPORT_GROUP_ID = "@upper_moon_chat"  # Replace with the actual group username or ID
 IMAGE_URL = "https://files.catbox.moe/sn06ft.jpg"  # Replace with the actual image URL
 
