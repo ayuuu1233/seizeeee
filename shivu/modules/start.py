@@ -7,7 +7,7 @@ from shivu import application, GROUP_ID, user_collection
 collection = db['total_pm_users']
 # Define your sudo users' IDs here
 sudo_user_ids = [6402009857]  # Replace with actual user IDs of the sudo users
-SUPPORT_GROUP_ID = "@Dyna_community"  # Replace with the actual group username or ID
+SUPPORT_GROUP_ID = "@upper_moon_chat"  # Replace with the actual group username or ID
 IMAGE_URL = "https://files.catbox.moe/sn06ft.jpg"  # Replace with the actual image URL
 
 async def notify_sudo_users(application: Application):
