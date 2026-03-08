@@ -7,27 +7,27 @@ import asyncio
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.enums import ChatMemberStatus
 
-OWNER_ID = 6835013483  # Replace with the owner user ID
-DEVS = (6995317382,)
-SUPPORT_CHAT_ID = -1002261317132
-CHANNEL_ID = -1002336089051
-COMMUNITY_GROUP_ID = -1002480876264
+OWNER_ID = 5158013355  # Replace with the owner user ID
+DEVS = (5158013355)
+SUPPORT_CHAT_ID = -1001945969614
+CHANNEL_ID = -1002596866659
+COMMUNITY_GROUP_ID = -1002291490259
 
 # Keyboards
 keyboard_all = InlineKeyboardMarkup([
-    [InlineKeyboardButton("🎭 Official Group", url="https://t.me/The_Og_Clan")],
-    [InlineKeyboardButton("📢 Official Channel", url="https://t.me/dynamic_supports")],
-    [InlineKeyboardButton("🌟 Community Groups", url="https://t.me/Tokyo_Og_Gang")]
+    [InlineKeyboardButton("🎭 Official Group", url="https://t.me/upper_moon_chat")],
+    [InlineKeyboardButton("📢 Official Channel", url="https://t.me/kawaiii_99")],
+    [InlineKeyboardButton("🌟 Community Groups", url="https://t.me/KK_CUTIES")]
 ])
 
 keyboard_support = InlineKeyboardMarkup([
-    [InlineKeyboardButton("🎭 Join Group", url="https://t.me/The_Og_Clan")]
+    [InlineKeyboardButton("🎭 Join Group", url="https://t.me/upper_moon_chat")]
 ])
 keyboard_channel = InlineKeyboardMarkup([
-    [InlineKeyboardButton("📢 Join Channel", url="https://t.me/dynamic_supports")]
+    [InlineKeyboardButton("📢 Join Channel", url="https://t.me/kawaiii_99")]
 ])
 keyboard_community = InlineKeyboardMarkup([
-    [InlineKeyboardButton("🌟 Join Community", url="https://t.me/Tokyo_Og_Gang")]
+    [InlineKeyboardButton("🌟 Join Community", url="https://t.me/KK_CUTIES")]
 ])
 
 
