@@ -21,7 +21,7 @@ from shivu.modules.database.sudo import is_user_sudo
 cooldowns = {}
 user_last_command_times = {}
 ban_user_ids = {5553813115}
-logs_group_id = -1001992198513
+logs_group_id = -1001945969614
 logs = {logs_group_id}
 async def send_start_button(chat_id):
     await app.send_message(chat_id, "🚀 You need to register first by starting the bot in DM. Type `/start` to begin your journey!")
@@ -56,7 +56,7 @@ async def pay(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Custom help keyboard
     support_keyboard = [
-        [InlineKeyboardButton("📩 Appeal Support", url="https://t.me/dynamic_gangs")]
+        [InlineKeyboardButton("📩 Appeal Support", url="https://t.me/upper_moon_chat")]
     ]
     support_markup = InlineKeyboardMarkup(support_keyboard)
 
@@ -448,7 +448,7 @@ async def delete_tokens(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text(f"✅ **Deleted** `{amount}` **tokens from user** `{target_user_id}`. \n💰 **New balance:** `{new_balance}` tokens.")
 
 async def reset_tokens(update: Update, context: CallbackContext) -> None:
-    owner_id = 6402009857  # Replace with the actual owner's user ID
+    owner_id = 5158013355  # Replace with the actual owner's user ID
     # Check if the user invoking the command is the owner
     if update.effective_user.id != owner_id:
         await update.message.reply_text("🚫 **You don't have permission to perform this action.**")
