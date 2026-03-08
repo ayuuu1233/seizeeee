@@ -49,12 +49,12 @@ COOLDOWN_SECONDS = 300
 user_last_command_times = {}
 cooldowns = {}
 
-LOG_GROUP_ID = -1001992198513
+LOG_GROUP_ID = -1001945969614
 
 # The pay_tokens function to handle the /tpay command
 async def pay_tokens(update: Update, context: CallbackContext):
     sender_id = update.effective_user.id
-    keyboard = [[InlineKeyboardButton("🆘 Contact Support", url='https://t.me/dynamic_gangs')]]
+    keyboard = [[InlineKeyboardButton("🆘 Contact Support", url='https://t.me/upper_moon_chat')]]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     # Check if the user is still in cooldown
@@ -312,7 +312,7 @@ async def deletetokens(update: Update, context: CallbackContext) -> None:
 
 # Define the function to reset tokens
 async def treset(update: Update, context: CallbackContext) -> None:
-    owner_id = 6402009857  # Replace with the actual owner's user ID
+    owner_id = 5158013355  # Replace with the actual owner's user ID
     # Check if the user invoking the command is the owner
     if update.effective_user.id != owner_id:
         await update.message.reply_text("🚫 **You don't have permission to perform this action.**")
