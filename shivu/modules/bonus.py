@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 from shivu import application, user_collection
 from shivu import shivuu as app
 
-MUST_JOIN = "dynamic_supports"  # Replace with your group/channel username or ID
-allowed_group_id = -1002466950912  # Replace with your allowed group ID
+MUST_JOIN = "upper_moon_chat"  # Replace with your group/channel username or ID
+allowed_group_id = -1001945969614  # Replace with your allowed group ID
 COOLDOWN_HOURS = 5  # Cooldown period in hours
 
 # Function to format remaining time into a readable string
