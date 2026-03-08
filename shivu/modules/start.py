@@ -127,18 +127,18 @@ async def start(update: Update, context: CallbackContext) -> None:
         print(f"Error sending DM to user: {e}")
 
     if update.effective_chat.type == "private":
-        bot_id = "7335799800"  # Replace with the actual bot ID
-        bot_name = "ᴄʜᴧʀᴧᴄᴛєʀ sєɪᴢє ʙσᴛ"  # Replace with the bot's display name
+        bot_id = "8748211605"  # Replace with the actual bot ID
+        bot_name = "『 ᴄʜᴀʀᴀᴄᴛᴇʀ ᴋᴀᴡᴀɪɪ ʙᴏᴛ 』"  # Replace with the bot's display name
 
         caption = (
             f"┬── ⋅ ⋅ ───── ᯽ ───── ⋅ ⋅ ──┬\n"
             f"  Kση'ηɪᴄʜɪᴡᴧ <a href='tg://user?id={user_id}'>{first_name}</a>!\n"
             f"┴── ⋅ ⋅ ───── ᯽ ───── ⋅ ⋅ ──┴\n\n"
             f"────────────────────────\n"
-            f"│ ᴡєʟᴄσϻє ᴛσ <a href='tg://user?id={bot_id}'>{bot_name}</a>, ʏσυꝛ ғʀɪєηᴅʟʏ ᴡᴧiғᴜ sєɪᴢєʀ ʙσᴛ ☄ │\n"
+            f"│ ᴡєʟᴄσϻє ᴛσ <a href='tg://user?id={bot_id}'>{bot_name}</a>, ʏσυꝛ ғʀɪєηᴅʟʏ ᴡᴧiғᴜ ᴋᴀᴡᴀɪɪ ʙσᴛ ☄ │\n"
             f"────────────────────────\n\n"
             f"━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ \n"
-            f" ❖ ᴡᴧɪғᴜ sєɪᴢєʀ ʙσᴛ ᴡɪʟʟ  ᴧυᴛσϻᴧᴛɪᴄᴧʟʟʏ sᴘᴧᴡη ᴧ ηєᴡ  ᴡᴧɪғυ ɪη ʏσυʀ ᴄʜᴧᴛ ᴀғᴛєʀ єᴠєʀʏ  100 ϻєssᴧɢєs ʙʏ ᴅєғᴧυʟᴛ.\n"
+            f" ❖ ᴡᴧɪғᴜ ᴋᴀᴡᴀɪɪ ʙσᴛ ᴡɪʟʟ  ᴧυᴛσϻᴧᴛɪᴄᴧʟʟʏ sᴘᴧᴡη ᴧ ηєᴡ  ᴡᴧɪғυ ɪη ʏσυʀ ᴄʜᴧᴛ ᴀғᴛєʀ єᴠєʀʏ  100 ϻєssᴧɢєs ʙʏ ᴅєғᴧυʟᴛ.\n"
             f" ❖ ʏσᴜ ᴄᴧη ᴧʟsσ ᴄυsᴛσᴍɪᴢє ᴛʜє  sᴘᴧᴡη ʀᴧᴛє ᴧηᴅ σᴛʜєꝛ sєᴛᴛɪηɢs  ᴛσ ʏσυʀ ʟɪᴋɪηɢ.\n"
             f"━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ \n\n"
             f"──────────────────────\n"
@@ -150,7 +150,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         keyboard = [
             [InlineKeyboardButton("✜ ᴧᴅᴅ ϻє ɪη ʏσυʀ ɢʀσυᴘ ✜", url=f'https://t.me/{context.bot.username}?startgroup=new')],
             [InlineKeyboardButton("˹ sυᴘᴘσʀᴛ ˼", url=f'https://t.me/{SUPPORT_GROUP_ID.lstrip("@")}'),
-             InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛєs ˼", url='https://t.me/Seizer_updates')],
+             InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛєs ˼", url='https://t.me/upper_moon_chat')],
             [InlineKeyboardButton("✧ʜᴇʟᴘ✧", callback_data='help')],
       ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -163,7 +163,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         keyboard = [
             [InlineKeyboardButton("Ⰶ ᴘᴍ ᴍᴇ Ⰶ", url=f'https://t.me/{context.bot.username}?start=true')],
             [InlineKeyboardButton("ꔷ sυᴘᴘσʀᴛ ꔷ", url=f'https://t.me/{SUPPORT_GROUP_ID.lstrip("@")}'),
-             InlineKeyboardButton("ꔷ ᴜᴘᴅᴧᴛєs ꔷ", url='https://t.me/Seizer_updates')]
+             InlineKeyboardButton("ꔷ ᴜᴘᴅᴧᴛєs ꔷ", url='https://t.me/upper_moon_chat')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         video_url = "https://telegra.ph/file/0b2e8e33d07a0d0e5914f.mp4"
