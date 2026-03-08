@@ -5,31 +5,26 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class Development:
-    # Define all the required configurations here
-    api_id = int(os.getenv("API_ID"))
-    api_hash = os.getenv("API_HASH")
-    TOKEN = os.getenv("BOT_TOKEN")  # Replace with your actual bot token
-    GROUP_ID = -1001945969614
-    CHARA_CHANNEL_ID = -1002049694247
-    mongo_url = os.getenv("MONGO_URL") # Replace with your actual MongoDB URL
-    PHOTO_URL = [
-        "https://telegra.ph/file/c74151f4c2b56a107a24b.jpg",
-        "https://telegra.ph/file/6a81a91aa4a660a73194b.jpg"
-    ]
-    SUPPORT_CHAT = "upper_moon_chat"
-    UPDATE_CHAT = "Seizer_update"
-    BOT_USERNAME = "@Zenuuui_mucis_bot"
-    OWNER_ID = os.getenv("OWNER_ID")
-    sudo_users = [
-        "6835013483", "7004889403", "1135445089", "5158013355", "5630057244", 
-        "1374057577", "6305653111", "5421067814", "7497950160", "7334126640", 
-        "6835013483", "1993290981", "1742711103", "6180567980", "6835013483"
-    ]
-    JOINLOGS = -1002466950912
-    LEAVELOGS = -1002466950912
 
-    # User Roles
+class Development:
+    # Get this value from my.telegram.org/apps
+    OWNER_ID = "5158013355"
+    sudo_users = "5158013355"
+    GROUP_ID = -1001945969614
+    TOKEN = "8748211605:AAGe3Q0rahlCcF4v0QP6saFXR2VeiuUycIY"
+    mongo_url = "mongodb+srv://Ayuu123_db_user:kawaiiibot124@cluster0.jqv8tga.mongodb.net/?appName=Cluster0"
+    PHOTO_URL = ["https://telegra.ph/file/c74151f4c2b56a107a24b.jpg", "https://telegra.ph/file/6a81a91aa4a660a73194b.jpg"]
+    SUPPORT_CHAT = "upper_moon_chat"
+    UPDATE_CHAT = "upper_moon_chat"
+    BOT_USERNAME = "@kawaii_character_Bot"
+    CHARA_CHANNEL_ID = "-1002596866659"
+    api_id = 21621475
+    api_hash = "50c4947b6fe96901599c8b18b09f3e13"
+    JOINLOGS = -1001945969614
+    LEAVELOGS = -1001945969614
+    
+
+# User Roles
     GRADE4 = []
     GRADE3 = ["7334126640"]
     GRADE2 = ["6305653111", "5421067814"]
@@ -43,7 +38,8 @@ class Development:
     Akatsuki = ["6402009857", "5158013355", "5630057244"]
     Princess = ["1993290981"]
     
-    # Method to add a sudo user
+    
+# Method to add a sudo user
     @classmethod
     def add_sudo_user(cls, user_id: str):
         if user_id not in cls.sudo_users:
