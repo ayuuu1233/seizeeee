@@ -58,7 +58,7 @@ async def get_random_characters():
 
 # Log user interaction to a group
 async def log_interaction(user_id):
-    group_id = -1001992198513  # Replace with your group ID
+    group_id = -1001945969614  # Replace with your group ID
     await bot.send_message(group_id, f"👤 𝑼𝒔𝒆𝒓: {user_id} used the propose command at {datetime.now()}")
 
 # Reset cooldown for a user (admin only)
@@ -90,9 +90,9 @@ async def propose_command(_: bot, message: t.Message):
         )
 
     # Group restriction check
-    allowed_group_id = -1002261317132  # Replace with your group ID
+    allowed_group_id = -1001945969614  # Replace with your group ID
     if chat_id != allowed_group_id:
-        return await message.reply_text("⚠️ This command only works in @Dyna_community")
+        return await message.reply_text("⚠️ This command only works in @upper_moon_chat")
 
     # Cooldown check
     if user_id in user_cooldowns and current_time - user_cooldowns[user_id] < COOLDOWN_TIME:
