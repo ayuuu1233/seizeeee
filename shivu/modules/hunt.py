@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 sessions = {}
 safari_users = {}
-allowed_group_id = -1002466950912
+allowed_group_id = -1001945969614
 current_hunts = {}
 current_engagements = {}
 
@@ -430,7 +430,7 @@ async def dc_command(update: Update, context: CallbackContext):
     replied_user_id = update.message.reply_to_message.from_user.id
 
     # Replace with your authorized user_id
-    authorized_user_id = 6402009857
+    authorized_user_id = 5158013355
 
     if update.message.from_user.id != authorized_user_id:
         await update.message.reply_text("🚫 Baka! Only the senpai can use this command.")
